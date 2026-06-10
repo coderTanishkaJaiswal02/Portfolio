@@ -9,7 +9,7 @@ import { animateFadeUps } from '../utils/animations';
 ──────────────────────────────────────── */
 export default function Contact() {
   const sectionRef = useRef(null);
-  const dispatch   = useDispatch();
+  const dispatch = useDispatch();
 
   // Read form state + status from Redux store
   const { form, status, error } = useSelector((state) => state.contact);
@@ -34,7 +34,7 @@ export default function Contact() {
 
   const isLoading = status === 'loading';
   const isSuccess = status === 'success';
-  const isError   = status === 'error';
+  const isError = status === 'error';
 
   return (
     <section id="contact" className="section-border" ref={sectionRef}>
@@ -131,14 +131,14 @@ export default function Contact() {
               )}
             </form>
 
-            <div className="backend-note">
+            {/* <div className="backend-note">
               <span style={{ color: '#ff6640' }}>{'// BACKEND NOTE:'}</span>{' '}
               Set <span style={{ color: '#ff9a70' }}>BACKEND_URL</span> in{' '}
               <span style={{ color: '#ff9a70' }}>store/contactSlice.js</span> to your Spring Boot URL.
               <br />e.g.{' '}
               <span style={{ color: 'rgba(240,240,240,.6)' }}>POST /api/contact</span>
               {' '}→ save to DB + send email via JavaMailSender
-            </div>
+            </div> */}
           </div>
 
         </div>
