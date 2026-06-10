@@ -1,0 +1,15 @@
+# ── Add this to your Spring Boot application.properties ──────────────────
+
+# Anthropic API key (get yours from https://console.anthropic.com)
+anthropic.api.key=sk-ant-YOUR_KEY_HERE
+
+# CORS — allow your Vite dev server
+spring.web.cors.allowed-origins=http://localhost:5173
+
+# Optional: proxy /api calls from Vite to Spring Boot
+# In vite.config.js add:
+#   server: {
+#     proxy: {
+#       '/api': 'http://localhost:8080'
+#     }
+#   }
