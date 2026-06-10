@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+
 /* ────────────────────────────────────────
    HERO — particle canvas + animated title
 ──────────────────────────────────────── */
@@ -121,9 +122,11 @@ export default function Hero() {
         </p>
         <div className="hero-actions">
           <a href="#projects-wrap" className="btn-primary">View Projects &nbsp;→</a>
+          <a href={resume} download="Tanishka_Jaiswal_Resume.pdf" className="btn-secondary">Download Resume &nbsp;↓</a>
           <a href="#contact"       className="btn-secondary">Let's Talk &nbsp;↗</a>
         </div>
       </div>
+
 
       <div className="hero-scroll" id="hero-scroll">
         <div className="scroll-line" />
