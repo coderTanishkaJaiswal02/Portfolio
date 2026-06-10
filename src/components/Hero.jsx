@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 
+
 /* ────────────────────────────────────────
    HERO — particle canvas + animated title
 ──────────────────────────────────────── */
@@ -19,12 +20,12 @@ export default function Hero() {
     window.addEventListener('resize', resize);
 
     const pts = Array.from({ length: 55 }, () => ({
-      x:  Math.random() * canvas.width,
-      y:  Math.random() * canvas.height,
-      r:  Math.random() * 1.4 + 0.4,
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.4 + 0.4,
       vx: (Math.random() - 0.5) * 0.28,
       vy: (Math.random() - 0.5) * 0.28,
-      a:  Math.random() * 0.38 + 0.08,
+      a: Math.random() * 0.38 + 0.08,
     }));
 
     let rafId;
@@ -37,12 +38,12 @@ export default function Hero() {
         ctx.fillStyle = `rgba(255,102,64,${p.a})`;
         ctx.fill();
         p.x += p.vx; p.y += p.vy;
-        if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         for (let j = i + 1; j < pts.length; j++) {
-          const q  = pts[j];
+          const q = pts[j];
           const dx = p.x - q.x, dy = p.y - q.y;
-          const d  = Math.sqrt(dx * dx + dy * dy);
+          const d = Math.sqrt(dx * dx + dy * dy);
           if (d < 110) {
             ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y);
             ctx.strokeStyle = `rgba(255,102,64,${0.07 * (1 - d / 110)})`;
@@ -68,12 +69,12 @@ export default function Hero() {
     });
 
     const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
-    tl.to('.hero-title .char', { y: 0,        duration: 0.85, stagger: 0.035, delay: 0.25 })
-      .to('.hero-badge',        { opacity: 1, y: 0, duration: 0.6 }, 0.2)
-      .to('.hero-sub',          { opacity: 1, y: 0, duration: 0.7 }, 0.5)
-      .to('.hero-actions',      { opacity: 1, y: 0, duration: 0.6 }, 0.7)
-      .to('#hero-scroll',       { opacity: 1, duration: 0.5 },       1.1)
-      .to('#hero-stats',        { opacity: 1, duration: 0.5 },       1.2);
+    tl.to('.hero-title .char', { y: 0, duration: 0.85, stagger: 0.035, delay: 0.25 })
+      .to('.hero-badge', { opacity: 1, y: 0, duration: 0.6 }, 0.2)
+      .to('.hero-sub', { opacity: 1, y: 0, duration: 0.7 }, 0.5)
+      .to('.hero-actions', { opacity: 1, y: 0, duration: 0.6 }, 0.7)
+      .to('#hero-scroll', { opacity: 1, duration: 0.5 }, 1.1)
+      .to('#hero-stats', { opacity: 1, duration: 0.5 }, 1.2);
   }, []);
 
   // Number counter animation
@@ -122,8 +123,8 @@ export default function Hero() {
         </p>
         <div className="hero-actions">
           <a href="#projects-wrap" className="btn-primary">View Projects &nbsp;→</a>
-          <a href={resume} download="Tanishka_Jaiswal_Resume.pdf" className="btn-secondary">Download Resume &nbsp;↓</a>
-          <a href="#contact"       className="btn-secondary">Let's Talk &nbsp;↗</a>
+          <a href="#" download="Tanishka_Jaiswal_Resume.pdf" className="btn-secondary">Download Resume &nbsp;↓</a>
+          <a href="#contact" className="btn-secondary">Let's Talk &nbsp;↗</a>
         </div>
       </div>
 
