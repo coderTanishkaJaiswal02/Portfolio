@@ -123,7 +123,7 @@ export default function Hero() {
         </p>
         <div className="hero-actions">
           <a href="#projects-wrap" className="btn-primary">View Projects &nbsp;→</a>
-          <a href="#" download="Tanishka_Jaiswal_Resume.pdf" className="btn-secondary">Download Resume &nbsp;↓</a>
+          <a href="./Tanishka_Jaiswal_Resume.pdf" download="Tanishka_Jaiswal_Resume.pdf" className="btn-secondary">Download Resume &nbsp;↓</a>
           <a href="#contact" className="btn-secondary">Let's Talk &nbsp;↗</a>
         </div>
       </div>
