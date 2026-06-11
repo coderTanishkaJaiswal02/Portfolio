@@ -42,6 +42,14 @@ export default function Navbar() {
     }
   }, [drawerOpen]);
 
+  // Clear GSAP transform when drawer closes
+  useEffect(() => {
+    if (!drawerOpen && drawerRef.current) {
+      const { gsap } = window.__gsap__ || {};
+      gsap?.set(drawerRef.current, { clearProps: 'transform' });
+    }
+  }, [drawerOpen]);
+
   const closeAndGo = () => setDrawerOpen(false);
 
   return (
