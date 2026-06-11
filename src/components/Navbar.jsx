@@ -111,13 +111,6 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
-
-        {/* Drawer footer socials */}
-        <div className="drawer-footer">
-          <a href="https://linkedin.com/in/tanishka-jaiswal-b9405b297" target="_blank" rel="noreferrer" className="drawer-social">LinkedIn</a>
-          <a href="https://github.com/coderTanishkaJaiswal02"           target="_blank" rel="noreferrer" className="drawer-social">GitHub</a>
-          <a href="mailto:tanishkaj290@gmail.com" className="drawer-social">Email</a>
-        </div>
       </aside>
     </>
   );

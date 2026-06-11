@@ -95,8 +95,9 @@ export const CONTACT_INFO = [
 ];
 
 export const NAV_LINKS = [
+  { href: '#hero',         label: 'Home'       },
   { href: '#about',        label: 'About'      },
   { href: '#projects-wrap',label: 'Projects'   },
   { href: '#internship',   label: 'Experience' },
-  { href: '#contact',      label: 'Hire Me', cta: true },
+  { href: '#contact',      label: 'Contact Me', cta: true },
 ];
