@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SKILLS } from '../data';
+import { SKILLS, EDUCATION } from '../data';
 import { animateFadeUps } from '../utils/animations';
 
 /* ────────────────────────────────────────
@@ -36,8 +36,9 @@ export default function About() {
             </h2>
             <p className="about-text">
               I'm a <strong>Full Stack Developer</strong> with 8+ months of hands-on internship
-              experience architecting enterprise-grade applications. Currently pursuing MCA at
-              Medi-Caps University, Indore — CGPA 8.4/10.
+              experience architecting enterprise-grade applications. Completed my MCA at
+              Medi-Caps University, Indore — CGPA 8.4/10 in 2025.
+
             </p>
             <p className="about-text">
               Specialised in <strong>secure RESTful API design</strong>, JWT + OAuth2 auth systems,
@@ -45,10 +46,18 @@ export default function About() {
               end-to-end across full sprint cycles independently.
             </p>
             <div className="about-tags">
-              {['Java 11+/17','Spring Boot','React.js','Microservices','JWT · OAuth2',
-                'MySQL','MongoDB','Docker','JUnit · Mockito','RBAC','PWA','Git · CI/CD',
+              {['Java 11+/17', 'Spring Boot', 'React.js', 'Microservices', 'JWT · OAuth2',
+                'MySQL', 'MongoDB', 'Docker', 'JUnit · Mockito', 'RBAC', 'PWA', 'Git · CI/CD',
               ].map((t) => <span key={t} className="tag">{t}</span>)}
             </div>
+          </div>
+          <div className="education-section fade-up">
+            <div className="section-label">Education</div>
+            {EDUCATION.map((e) => (
+              <p key={e.degree} className="about-text">
+                <strong>{e.degree}</strong> – {e.institution}{e.cgpa ? ` (CGPA ${e.cgpa})` : ''}
+              </p>
+            ))}
           </div>
 
           <div className="skills-col fade-up">

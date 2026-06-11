@@ -27,7 +27,7 @@ export default function Internship() {
       <div className="section-wrap">
         <div className="section-label">Work Experience</div>
         <h2 className="section-h fade-up">
-          Where I've shipped{' '}
+          Where I've shipped{' 10K'}
           <em style={{ fontStyle: 'normal', color: '#ff6640' }}>real</em> work
         </h2>
         <div className="timeline">

@@ -51,17 +51,17 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { name: 'Java / Spring Boot',          pct: 90 },
-  { name: 'React.js / JavaScript ES6+',  pct: 88 },
-  { name: 'MySQL · MongoDB',             pct: 85 },
-  { name: 'Microservices Architecture',  pct: 82 },
-  { name: 'JWT · OAuth2 · RBAC',         pct: 80 },
-  { name: 'Docker · DevOps · CI/CD',     pct: 65 },
+  { name: 'Java / Spring Boot', pct: 90 },
+  { name: 'React.js / JavaScript ES6+', pct: 88 },
+  { name: 'MySQL · MongoDB', pct: 85 },
+  { name: 'Microservices Architecture', pct: 82 },
+  { name: 'JWT · OAuth2 · RBAC', pct: 80 },
+  { name: 'Docker · DevOps · CI/CD', pct: 65 },
 ];
 
 export const TIMELINE = [
   {
-    period: 'JAN 2025 — APR 2025',
+    period: 'JAN 2026 — APR 2026',
     company: 'Zoomcode Technology',
     role: 'Full Stack Developer Intern · LLP',
     achievements: [
@@ -73,7 +73,7 @@ export const TIMELINE = [
     ],
   },
   {
-    period: 'AUG 2024 — DEC 2024',
+    period: 'AUG 2025 — DEC 2025',
     company: '51 Digital Media',
     role: 'Frontend Developer Intern',
     achievements: [
@@ -88,16 +88,21 @@ export const TIMELINE = [
 
 export const CONTACT_INFO = [
   { icon: '📍', text: 'Indore, Madhya Pradesh, India' },
-  { icon: '📧', text: 'tanishkaj290@gmail.com',             href: 'mailto:tanishkaj290@gmail.com' },
+  { icon: '📧', text: 'tanishkaj290@gmail.com', href: 'mailto:tanishkaj290@gmail.com' },
   { icon: '📱', text: '+91 9009222448' },
-  { icon: '🔗', text: 'linkedin.com/in/tanishka-jaiswal',   href: 'https://linkedin.com/in/tanishka-jaiswal-b9405b297' },
-  { icon: '💻', text: 'github.com/coderTanishkaJaiswal02',  href: 'https://github.com/coderTanishkaJaiswal02' },
+  { icon: '🔗', text: 'linkedin.com/in/tanishka-jaiswal', href: 'https://linkedin.com/in/tanishka-jaiswal-b9405b297' },
+  { icon: '💻', text: 'github.com/coderTanishkaJaiswal02', href: 'https://github.com/coderTanishkaJaiswal02' },
+];
+
+export const EDUCATION = [
+  { degree: "MCA", institution: "Medi-Caps University, Indore", cgpa: "8.4/10" },
+  { degree: "BCA", institution: "Government Holkar Science College, Indore", cgpa: "7.1/10" },
 ];
 
 export const NAV_LINKS = [
-  { href: '#hero',         label: 'Home'       },
-  { href: '#about',        label: 'About'      },
-  { href: '#projects-wrap',label: 'Projects'   },
-  { href: '#internship',   label: 'Experience' },
-  { href: '#contact',      label: 'Contact Me', cta: true },
+  { href: '#hero', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#projects-wrap', label: 'Projects' },
+  { href: '#internship', label: 'Experience' },
+  { href: '#contact', label: 'Contact Me', cta: true },
 ];
